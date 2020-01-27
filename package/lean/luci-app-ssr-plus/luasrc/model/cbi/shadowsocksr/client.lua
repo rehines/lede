@@ -75,7 +75,7 @@ o:value("8.8.8.8:53", translate("Google Public DNS (8.8.8.8)"))
 o:value("208.67.222.222:53", translate("OpenDNS (208.67.222.222)"))
 o:value("208.67.220.220:53", translate("OpenDNS (208.67.220.220)"))
 o:value("127.0.0.1:5353", translate("ADGuardHome DNS (127.0.0.1)"))
-o:depends("pdnsd_enable", "0")
+o:depends("pdnsd_enable", "1")
 
 
 return m
