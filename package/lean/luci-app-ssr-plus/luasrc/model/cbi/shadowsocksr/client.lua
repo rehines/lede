@@ -74,15 +74,8 @@ o:value("8.8.4.4:53", translate("Google Public DNS (8.8.4.4)"))
 o:value("8.8.8.8:53", translate("Google Public DNS (8.8.8.8)"))
 o:value("208.67.222.222:53", translate("OpenDNS (208.67.222.222)"))
 o:value("208.67.220.220:53", translate("OpenDNS (208.67.220.220)"))
-o:value("209.244.0.3:53", translate("Level 3 Public DNS (209.244.0.3)"))
-o:value("209.244.0.4:53", translate("Level 3 Public DNS (209.244.0.4)"))
-o:value("4.2.2.1:53", translate("Level 3 Public DNS (4.2.2.1)"))
-o:value("4.2.2.2:53", translate("Level 3 Public DNS (4.2.2.2)"))
-o:value("4.2.2.3:53", translate("Level 3 Public DNS (4.2.2.3)"))
-o:value("4.2.2.4:53", translate("Level 3 Public DNS (4.2.2.4)"))
-o:value("1.1.1.1:53", translate("Cloudflare DNS (1.1.1.1)"))
-o:value("114.114.114.114:53", translate("Oversea Mode DNS-1 (114.114.114.114)"))
-o:value("114.114.115.115:53", translate("Oversea Mode DNS-2 (114.114.115.115)"))
-o:depends("pdnsd_enable", "1")
+o:value("127.0.0.1:5353", translate("ADGuardHome DNS (127.0.0.1)"))
+o:depends("pdnsd_enable", "0")
+
 
 return m
