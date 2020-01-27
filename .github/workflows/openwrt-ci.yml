@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: OpenWrt-Newifi_D2_ADGuard Home
+name: OpenWrt-Newifi_D2_add shadowsocks
 
 on:
   push:
@@ -60,6 +60,9 @@ jobs:
           mkdir openwrt-packages
           cd openwrt-packages
           git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
+          git clone https://github.com/shadowsocks/luci-app-shadowsocks.git
+          git clone https://github.com/shadowsocks/openwrt-feeds.git
+          git clone https://github.com/shadowsocks/openwrt-shadowsocks.git
           
 
       - name: Update feeds
@@ -172,6 +175,9 @@ jobs:
           # CONFIG_PACKAGE_luci-app-wrtbwmon=y
           CONFIG_PACKAGE_luci-app-adguardhome=y
           CONFIG_PACKAGE_luci-app-vlmcsd=y
+          CONFIG_PACKAGE_luci-app-shadowsocks=y
+          CONFIG_PACKAGE_openwrt-feeds=y
+          CONFIG_PACKAGE_openwrt-shadowsocks=y
           EOF
 
           # LuCI主题:
